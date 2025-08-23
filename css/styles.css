@@ -1,37 +1,50 @@
 
 :root {
-  --bg: #f9f9f9;
-  --text: #222;
-  --accent: #0077cc;
+  --bg: #0d0d0d;
+  --text: #e0e0e0;
+  --accent-green: #00ff88;
+  --accent-purple: #bb86fc;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Courier New', monospace;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
 
 header {
-  background: var(--accent);
-  color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
+  border-bottom: 2px solid var(--accent-purple);
 }
 
-header nav a {
-  color: white;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--accent-green);
+}
+
+header p {
+  margin: 0.5rem 0 1rem 0;
+  color: var(--accent-purple);
+}
+
+nav a {
   margin: 0 1rem;
+  color: var(--accent-green);
   text-decoration: none;
+  font-weight: bold;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: var(--accent-purple);
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -40,12 +53,43 @@ section {
   margin-bottom: 3rem;
 }
 
-h1, h2, h3 {
+h2 {
+  color: var(--accent-purple);
+  border-bottom: 1px solid var(--accent-purple);
+  padding-bottom: 0.5rem;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--accent-green);
+  border-radius: 5px;
+}
+
+.project h3 {
   margin-top: 0;
+  color: var(--accent-green);
+}
+
+.project a {
+  color: var(--accent-purple);
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: #1a1a1a;
+  border-top: 2px solid var(--accent-green);
+  margin-top: 3rem;
 }
