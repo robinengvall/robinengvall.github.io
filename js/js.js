@@ -153,28 +153,45 @@ if (subtitle) {
 // Skills search functionality
 const skillSearchInput = document.getElementById('skillSearch');
 const skillBadges = document.querySelectorAll('.skill-badge');
+const skillCategories = document.querySelectorAll('.skill-category-block');
 
 if (skillSearchInput) {
   skillSearchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
     
     if (searchTerm === '') {
-      // Reset all badges
+      // Reset all badges and show all categories
       skillBadges.forEach(badge => {
         badge.classList.remove('highlighted', 'faded');
       });
+      skillCategories.forEach(category => {
+        category.style.display = 'block';
+      });
     } else {
-      // Filter and highlight
-      skillBadges.forEach(badge => {
-        const skillName = badge.getAttribute('data-skill').toLowerCase();
-        const badgeText = badge.textContent.toLowerCase();
+      // Filter and highlight, hide empty categories
+      skillCategories.forEach(category => {
+        let hasVisibleSkills = false;
+        const badges = category.querySelectorAll('.skill-badge');
         
-        if (skillName.includes(searchTerm) || badgeText.includes(searchTerm)) {
-          badge.classList.add('highlighted');
-          badge.classList.remove('faded');
+        badges.forEach(badge => {
+          const skillName = badge.getAttribute('data-skill').toLowerCase();
+          const badgeText = badge.textContent.toLowerCase();
+          
+          if (skillName.includes(searchTerm) || badgeText.includes(searchTerm)) {
+            badge.classList.add('highlighted');
+            badge.classList.remove('faded');
+            hasVisibleSkills = true;
+          } else {
+            badge.classList.add('faded');
+            badge.classList.remove('highlighted');
+          }
+        });
+        
+        // Hide/show entire category based on if any skills match
+        if (hasVisibleSkills) {
+          category.style.display = 'block';
         } else {
-          badge.classList.add('faded');
-          badge.classList.remove('highlighted');
+          category.style.display = 'none';
         }
       });
     }
@@ -186,6 +203,9 @@ if (skillSearchInput) {
       skillSearchInput.value = '';
       skillBadges.forEach(badge => {
         badge.classList.remove('highlighted', 'faded');
+      });
+      skillCategories.forEach(category => {
+        category.style.display = 'block';
       });
     }
   });
