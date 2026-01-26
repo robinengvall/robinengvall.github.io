@@ -3,84 +3,240 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Robin Engvall | Backend & AI Developer</title>
+  <title>Robin Engvall | Junior Developer</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
   <header>
-    <h1>Robin Engvall</h1>
-    <p>Backend Developer | AI & Machine Learning Specialist</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-content">
+      <h1 class="glitch" data-text="Robin Engvall">Robin Engvall</h1>
+      <p class="subtitle">Junior Python Developer | AI & Backend</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <p>
-        I am a backend developer with a passion for building scalable systems and applying 
-        artificial intelligence and machine learning to solve real-world problems.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="experience">
-        <h3>AI & App Devleoper Intern | Podmanager</h3>
-        <p><em>Feb 2025 - Jun 2025 | 5 Months</em></p>
-        <p>Automated transcription, audio enhancement, and content generation with Flask, MongoDB, and ElevenLabs API.</p>
-      </div>
- 
-      <div class="experience">
-        <h3>AI Devleoper Intern | Linespotting AB</h3>
-        <p><em>Sep 2024 - Nov 2024 | 3 Months</em></p>
-        <p>Developed an AI system to identify political corruption and unethical practices in business and politics.<p>
-      </div>
-    </section>
-
-
-    <section id="projects">
-      <h2>Highlighted Projects</h2>
-      <div class="project">
-        <h3>AI-Powered Podcast Manager</h3>
-        <p>Automated transcription, audio enhancement, and content generation with Flask, MongoDB, and ElevenLabs API.</p>
-      </div>
-      <div class="project">
-        <h3>Corruption Prediction Model</h3>
-        <p>Built LSTM and classification models to predict short-term stock movements using Python and TensorFlow.</p>
+      <div class="about-content">
+        <p class="intro">
+          Junior Pythonutvecklare med inriktning mot AI, backend och datadrivna system. Erfaren av att bygga API:er, 
+          arbeta med databaser och utveckla AI-drivna funktioner genom LIA och projekt i produktionsnära miljöer. 
+          Stresstålig, ansvarstagande och van att arbeta både självständigt och i team.
+        </p>
+        <div class="quick-facts">
+          <div class="fact-card">
+            <span class="fact-icon">📍</span>
+            <p>Based in Gothenburg, Sweden</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-icon">🎓</span>
+            <p>Python & AI Development Graduate</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-icon">💼</span>
+            <p>Open to Opportunities</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Flask, FastAPI</li>
-        <li>MongoDB, PostgreSQL</li>
-        <li>Machine Learning (scikit-learn, TensorFlow, PyTorch)</li>
-        <li>Data Engineering & APIs</li>
-        <li>Docker & Cloud Deployment</li>
-      </ul>
+    <section id="experience" class="fade-in">
+      <h2>Professional Experience</h2>
+      
+      <div class="timeline">
+        <div class="experience-card">
+          <div class="card-header">
+            <h3>AI & App Developer, LIA</h3>
+            <span class="company">Podmanager, Göteborg</span>
+          </div>
+          <p class="period">2025</p>
+          <div class="card-content">
+            <p>Utvecklade AI-drivna backendfunktioner, API-integrationer och dataflöden med Python och Flask. Deltog i kodgranskning och tekniska diskussioner i team.</p>
+            <ul class="tech-stack">
+              <li>Python & Flask Backend</li>
+              <li>API-integrationer</li>
+              <li>AI-drivna funktioner</li>
+              <li>Kodgranskning i team</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <h3>AI Developer, LIA</h3>
+            <span class="company">Linespotting AB, Kalmar</span>
+          </div>
+          <p class="period">2024–2025</p>
+          <div class="card-content">
+            <p>Utvecklade AI-system för identifiering av politisk korruption. Hanterade och preprocessade över 1 miljon rader data och tränade ML-modeller.</p>
+            <ul class="tech-stack">
+              <li>AI-system utveckling</li>
+              <li>Datapreprocessing (1M+ rader)</li>
+              <li>ML-modell träning</li>
+              <li>Python & Machine Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="robinengvall96@gmail.com">robinengvall96@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/robinengvall" target="_blank">robinengvall</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/robin-engvall" target="_blank">robin-engvall</a></p>
+    <section id="projects" class="fade-in">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>AI-Powered Podcast Manager</h3>
+            <span class="project-tag">Full-Stack</span>
+          </div>
+          <p>Automated podcast transcription, audio enhancement, and content generation system using modern AI APIs.</p>
+          <div class="tech-tags">
+            <span>Flask</span>
+            <span>MongoDB</span>
+            <span>ElevenLabs API</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Corruption Detection System</h3>
+            <span class="project-tag">AI/ML</span>
+          </div>
+          <p>Machine learning system for identifying political corruption patterns and unethical practices in business and politics.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>TensorFlow</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Stock Movement Predictor</h3>
+            <span class="project-tag">Machine Learning</span>
+          </div>
+          <p>LSTM and classification models for predicting short-term stock market movements using historical data.</p>
+          <div class="tech-tags">
+            <span>PyTorch</span>
+            <span>LSTM</span>
+            <span>Data Science</span>
+            <span>Financial ML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Technical Skills</h2>
+      <div class="skills-search-container">
+        <input type="text" id="skillSearch" placeholder="🔍 Search skills..." class="skill-search-input">
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category-block">
+          <h3>Programming</h3>
+          <div class="skills-grid">
+            <span class="skill-badge" data-skill="python">Python</span>
+            <span class="skill-badge" data-skill="javascript">JavaScript</span>
+            <span class="skill-badge" data-skill="html">HTML</span>
+            <span class="skill-badge" data-skill="css">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category-block">
+          <h3>Backend & APIs</h3>
+          <div class="skills-grid">
+            <span class="skill-badge" data-skill="flask">Flask</span>
+            <span class="skill-badge" data-skill="rest api">REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-category-block">
+          <h3>Data & AI</h3>
+          <div class="skills-grid">
+            <span class="skill-badge" data-skill="machine learning">Machine Learning</span>
+            <span class="skill-badge" data-skill="data analysis">Data Analysis</span>
+            <span class="skill-badge" data-skill="data preprocessing">Data Preprocessing</span>
+          </div>
+        </div>
+
+        <div class="skill-category-block">
+          <h3>Databases</h3>
+          <div class="skills-grid">
+            <span class="skill-badge" data-skill="mongodb">MongoDB</span>
+            <span class="skill-badge" data-skill="sql">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category-block">
+          <h3>Tools</h3>
+          <div class="skills-grid">
+            <span class="skill-badge" data-skill="git">Git</span>
+            <span class="skill-badge" data-skill="linux">Linux</span>
+            <span class="skill-badge" data-skill="azure">Azure</span>
+            <span class="skill-badge" data-skill="aws">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <div class="education-card">
+        <div class="edu-header">
+          <h3>Pythonutvecklare med inriktning AI</h3>
+          <span class="school">Teknikhögskolan Göteborg</span>
+        </div>
+        <p class="period">2023–2025</p>
+        <p class="edu-description">
+          YH-examen med fokus på Python, AI, backend och praktisk systemutveckling. 22 veckors LIA hos techföretag.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-intro">I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:robinengvall96@gmail.com" class="contact-link email">
+            <span class="icon">✉️</span>
+            <span>robinengvall96@gmail.com</span>
+          </a>
+          <a href="https://github.com/robinengvall" target="_blank" class="contact-link github">
+            <span class="icon">💻</span>
+            <span>github.com/robinengvall</span>
+          </a>
+          <a href="https://linkedin.com/in/robin-engvall" target="_blank" class="contact-link linkedin">
+            <span class="icon">💼</span>
+            <span>linkedin.com/in/robin-engvall</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <small>&copy; <span id="year"></span> Robin Engvall</small>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Robin Engvall. Built with passion for clean code.</p>
+      <p class="footer-tech">HTML • CSS • JavaScript</p>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="js/js.js"></script>
 </body>
 </html>
