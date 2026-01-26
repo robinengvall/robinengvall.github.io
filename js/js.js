@@ -1,50 +1,6 @@
 // Update copyright year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Custom cursor animation
-const cursorDot = document.querySelector('.cursor-dot');
-const cursorOutline = document.querySelector('.cursor-outline');
-
-let mouseX = 0, mouseY = 0;
-let outlineX = 0, outlineY = 0;
-
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  
-  if (cursorDot) {
-    cursorDot.style.left = mouseX + 'px';
-    cursorDot.style.top = mouseY + 'px';
-  }
-});
-
-// Smooth outline follow
-function animateOutline() {
-  outlineX += (mouseX - outlineX) * 0.15;
-  outlineY += (mouseY - outlineY) * 0.15;
-  
-  if (cursorOutline) {
-    cursorOutline.style.left = outlineX + 'px';
-    cursorOutline.style.top = outlineY + 'px';
-  }
-  
-  requestAnimationFrame(animateOutline);
-}
-animateOutline();
-
-// Cursor scale on hover
-document.querySelectorAll('a, button, .project-card, .skill-item').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    if (cursorOutline) cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    if (cursorDot) cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
-  });
-  
-  el.addEventListener('mouseleave', () => {
-    if (cursorOutline) cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-    if (cursorDot) cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-  });
-});
-
 // Fade in sections on scroll
 const observerOptions = {
   threshold: 0.1,
