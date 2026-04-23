@@ -1,0 +1,131 @@
+{
+  "projects": [
+    {
+      "id": "steam-data-pipeline",
+      "title": "Steam Data Pipeline",
+      "description": "End-to-end data pipeline for extracting, transforming, and analyzing Steam gaming data. Automated ETL processes with scheduled data collection and processing.",
+      "longDescription": "A comprehensive data engineering project that builds an automated pipeline for collecting and analyzing Steam platform data. Features include API integration, data transformation, storage solutions, and analytical insights.",
+      "category": "Data Engineering",
+      "tags": ["Python", "ETL", "Data Pipeline", "APIs", "Automation"],
+      "githubUrl": "https://github.com/robinengvall/steam-data-pipeline",
+      "liveUrl": null,
+      "image": null,
+      "featured": true,
+      "startDate": "2026-01",
+      "status": "active",
+      "highlights": [
+        "Automated data collection from Steam API",
+        "ETL pipeline with data transformation",
+        "Scheduled data processing",
+        "Data analysis and visualization"
+      ]
+    },
+    {
+      "id": "flashlingo",
+      "title": "FlashLingo",
+      "description": "AI-powered language learning application with flashcard system. Interactive vocabulary builder with smart repetition algorithms.",
+      "longDescription": "An intelligent language learning platform that uses spaced repetition and AI to help users master vocabulary efficiently. Built with modern Python frameworks and interactive UI.",
+      "category": "AI/Education",
+      "tags": ["Python", "AI", "Flask", "Education", "NLP"],
+      "githubUrl": "https://github.com/robinengvall/flashlingo",
+      "liveUrl": null,
+      "image": null,
+      "featured": true,
+      "startDate": "2025-06",
+      "status": "completed",
+      "highlights": [
+        "Spaced repetition algorithm",
+        "Interactive flashcard system",
+        "Progress tracking",
+        "Multiple language support"
+      ]
+    },
+    {
+      "id": "model-evaluator",
+      "title": "Model Evaluator",
+      "description": "Framework for evaluating and comparing machine learning models. Automated testing, metrics calculation, and performance visualization.",
+      "longDescription": "A comprehensive toolkit for ML model evaluation that provides standardized testing procedures, multiple metrics, and detailed performance reports with visualizations.",
+      "category": "Machine Learning",
+      "tags": ["Python", "ML", "Model Evaluation", "Data Science", "Testing"],
+      "githubUrl": "https://github.com/robinengvall/model_evaluator",
+      "liveUrl": null,
+      "image": null,
+      "featured": false,
+      "startDate": "2025-04",
+      "status": "completed",
+      "highlights": [
+        "Automated model testing",
+        "Multiple evaluation metrics",
+        "Performance visualization",
+        "Comparative analysis"
+      ]
+    },
+    {
+      "id": "podcast-manager",
+      "title": "AI-Powered Podcast Manager",
+      "description": "Automated podcast transcription, audio enhancement, and content generation system using modern AI APIs.",
+      "longDescription": "Full-stack application built during LIA at Podmanager. Handles automated podcast workflows including transcription, audio enhancement, and AI-powered content generation using ElevenLabs and other modern APIs.",
+      "category": "Full-Stack",
+      "tags": ["Flask", "MongoDB", "ElevenLabs API", "Python", "Audio Processing"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "image": null,
+      "featured": true,
+      "company": "Podmanager",
+      "startDate": "2025-01",
+      "endDate": "2025-03",
+      "status": "completed",
+      "highlights": [
+        "Automated podcast transcription",
+        "AI-powered audio enhancement",
+        "Content generation with AI APIs",
+        "MongoDB data management",
+        "RESTful API design"
+      ]
+    },
+    {
+      "id": "corruption-detection",
+      "title": "Corruption Detection System",
+      "description": "Machine learning system for identifying political corruption patterns and unethical practices in business and politics.",
+      "longDescription": "Advanced NLP and ML system developed during LIA at Linespotting AB. Processes over 1 million rows of data to identify patterns of corruption and unethical behavior using sophisticated text analysis and classification models.",
+      "category": "AI/ML",
+      "tags": ["Python", "NLP", "TensorFlow", "Data Analysis", "ML Classification"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "image": null,
+      "featured": true,
+      "company": "Linespotting AB",
+      "startDate": "2024-10",
+      "endDate": "2025-01",
+      "status": "completed",
+      "highlights": [
+        "Processed 1M+ rows of data",
+        "Advanced NLP techniques",
+        "Pattern recognition algorithms",
+        "ML model training and optimization",
+        "Real-world deployment"
+      ]
+    },
+    {
+      "id": "stock-predictor",
+      "title": "Stock Movement Predictor",
+      "description": "LSTM and classification models for predicting short-term stock market movements using historical data.",
+      "longDescription": "Deep learning project using LSTM neural networks and classification algorithms to predict stock price movements. Features data preprocessing, feature engineering, and model training with PyTorch.",
+      "category": "Machine Learning",
+      "tags": ["PyTorch", "LSTM", "Data Science", "Financial ML", "Deep Learning"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "image": null,
+      "featured": false,
+      "startDate": "2024-08",
+      "status": "completed",
+      "highlights": [
+        "LSTM neural networks",
+        "Historical data analysis",
+        "Feature engineering",
+        "Model optimization",
+        "Financial time series prediction"
+      ]
+    }
+  ]
+}
