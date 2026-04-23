@@ -5,13 +5,13 @@ import { useState } from "react";
 import { portfolioData } from "@/data/portfolio";
 import { Search } from "lucide-react";
 import {
-  SiPython, SiJavascript, SiTypescript, SiHtml5, SiCss3,
+  SiPython, SiJavascript, SiTypescript, SiHtml5,
   SiFlask, SiFastapi, SiDjango,
   SiTensorflow, SiPytorch, SiScikitlearn, SiPandas, SiNumpy,
   SiMongodb, SiPostgresql, SiMysql, SiSqlite,
-  SiGit, SiDocker, SiLinux, SiAmazonaws, SiMicrosoftazure,
-  SiReact, SiNextdotjs, SiBash,
-  SiGithub, SiVisualstudiocode, SiPostman, SiJupyter,
+  SiGit, SiDocker, SiLinux,
+  SiReact, SiNextdotjs,
+  SiGithub, SiPostman, SiJupyter,
 } from "react-icons/si";
 import { Database, Brain, Network, Server, Code2 } from "lucide-react";
 
@@ -31,14 +31,14 @@ const item = {
 };
 
 // Icon mapping - maps skill names to their icons
-const iconMap: Record<string, React.ComponentType<{ className?: string; size?: number }>> = {
+const iconMap: Record<string, any> = {
   // Programming Languages
   "Python": SiPython,
   "JavaScript": SiJavascript,
   "TypeScript": SiTypescript,
   "HTML": SiHtml5,
-  "CSS": SiCss3,
-  "Bash": SiBash,
+  "CSS": Code2,
+  "Bash": Code2,
   "SQL": Database,
   
   // Backend & APIs
@@ -77,12 +77,12 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; size?: n
   "Git": SiGit,
   "Docker": SiDocker,
   "Linux": SiLinux,
-  "AWS": SiAmazonaws,
-  "Azure": SiMicrosoftazure,
+  "AWS": Server,
+  "Azure": Server,
   "React": SiReact,
   "Next.js": SiNextdotjs,
   "GitHub": SiGithub,
-  "VS Code": SiVisualstudiocode,
+  "VS Code": Code2,
   "Postman": SiPostman,
   "Jupyter Notebook": SiJupyter,
   "CI/CD": Code2,
