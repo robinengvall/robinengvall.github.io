@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
-    domains: ['images.unsplash.com', 'avatars.githubusercontent.com'],
+    unoptimized: true,
   },
+  // If using basePath for GitHub Pages user site, uncomment:
+  // basePath: '',
+  // If repo name is not username.github.io, use:
+  // basePath: '/repo-name',
 }
 
 module.exports = nextConfig
