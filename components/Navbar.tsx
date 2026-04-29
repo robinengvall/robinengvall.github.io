@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
@@ -112,7 +112,18 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center gap-3">
+            <motion.a
+              href={portfolioData.personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 border-2 border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download size={18} />
+              Download CV
+            </motion.a>
             <motion.a
               href="#contact"
               onClick={(e) => {
@@ -170,6 +181,15 @@ export default function Navbar() {
                   </a>
                 );
               })}
+              <a
+                href={portfolioData.personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors"
+              >
+                <Download size={18} />
+                Download CV
+              </a>
               <a
                 href="#contact"
                 onClick={(e) => {

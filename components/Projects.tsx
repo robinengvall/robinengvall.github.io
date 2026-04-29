@@ -5,6 +5,7 @@ import { Github, ExternalLink, ArrowRight } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import Image from "next/image";
 
 const container = {
   hidden: { opacity: 0 },
@@ -105,11 +106,20 @@ export default function Projects() {
             >
               {/* Project Image */}
               <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-7xl font-bold text-gradient opacity-20">
-                    {project.title.charAt(0)}
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-7xl font-bold text-gradient opacity-20">
+                      {project.title.charAt(0)}
+                    </div>
                   </div>
-                </div>
+                )}
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1.5 bg-primary/90 text-primary-foreground text-xs font-semibold rounded-full">
@@ -124,7 +134,7 @@ export default function Projects() {
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-foreground/80 leading-relaxed text-sm">
                     {project.description}
                   </p>
                 </div>
@@ -134,13 +144,13 @@ export default function Projects() {
                   {project.tags.slice(0, 4).map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 bg-muted text-xs font-medium rounded-lg"
+                      className="px-2.5 py-1 bg-muted text-foreground/90 text-xs font-medium rounded-lg"
                     >
                       {tag}
                     </span>
                   ))}
                   {project.tags.length > 4 && (
-                    <span className="px-2.5 py-1 bg-muted text-xs font-medium rounded-lg">
+                    <span className="px-2.5 py-1 bg-muted text-foreground/90 text-xs font-medium rounded-lg">
                       +{project.tags.length - 4}
                     </span>
                   )}
@@ -166,12 +176,12 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 border-2 border-border rounded-lg font-medium text-sm hover:border-primary/50 hover:bg-primary/5 transition-all flex-1 justify-center"
+                      className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:bg-primary/90 transition-colors flex-1 justify-center"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <ExternalLink size={16} />
-                      Live Demo
+                      View Website
                     </motion.a>
                   )}
                 </div>

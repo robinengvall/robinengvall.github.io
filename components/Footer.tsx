@@ -117,18 +117,6 @@ export default function Footer() {
                 Download Resume
               </motion.a>
               <motion.a
-                href="#certifications"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection("#certifications");
-                }}
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                whileHover={{ x: 5 }}
-              >
-                <Award size={18} />
-                View Certificates
-              </motion.a>
-              <motion.a
                 href={`mailto:${personal.email}`}
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 whileHover={{ x: 5 }}

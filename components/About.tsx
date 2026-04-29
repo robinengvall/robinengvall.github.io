@@ -91,7 +91,7 @@ export default function About() {
           className="card-premium p-8 lg:p-12 space-y-6"
         >
           <h3 className="text-2xl font-bold">My Journey</h3>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-foreground/90 leading-relaxed text-base">
             {about.longBio.split('\n\n').map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}

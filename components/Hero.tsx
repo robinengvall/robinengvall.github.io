@@ -167,16 +167,17 @@ export default function Hero() {
           >
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-3xl opacity-30 animate-glow" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-glow" />
               
               {/* Image Container */}
-              <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-border/50 bg-muted">
-                <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-                  {/* Placeholder - Replace with actual image */}
-                  <div className="text-9xl font-bold text-gradient opacity-50">
-                    {personal.initials}
-                  </div>
-                </div>
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-border/50 bg-muted">
+                <Image
+                  src="/images/profile.png"
+                  alt={personal.name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               {/* Floating Code Card */}
